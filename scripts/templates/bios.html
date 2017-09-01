@@ -1,0 +1,25 @@
+{% for item in data %}
+	{% if (item.first != "blank") %}
+	<div class="bio" id="{{ item.last|lower }}-bio">
+		<img class="bio-headshot" src="https://www.washingtonpost.com/wp-stat/interns-2017/images/{{ loop.index }}.jpg">
+
+		<span class="section {{ item.section|lower }}">{{ item.desk }}</span>
+		<div class="name">{{ item.first }} {{ item.last }}</div>
+		<div class="school">{{ item.school }}</div>
+		{% if item.twitter %}
+		<a class="twitter" href="http://twitter.com/{{ item.twitter }}/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>@{{ item.twitter }}</a>
+		{% endif %}
+		<p>
+			{{ item.bio | replace('\n\n', '</p><p>') }}
+		</p>
+		<p class="pg-helper pg-helper--instructions">Return to top</p>
+
+		<div class="pg-divider">
+			<span class="pg-divider-line"></span>
+			<span class="pg-divider-tick"></span>
+			<span class="pg-divider-line"></span>
+		</div>
+
+	</div>
+	{% endif %}
+{% endfor %}

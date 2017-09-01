@@ -1,0 +1,319 @@
+body, html {
+	margin: 0;
+}
+
+a {
+	color: #1955a5;
+	text-decoration: none;
+}
+
+.header {
+	margin: 0 auto;
+	display: block;
+	max-width: 700px;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.intern-menu {
+	width: 20%;
+	float: left;
+	margin-top: 5px;
+	position: fixed;
+}
+
+.intern-body {
+	margin-left: 20%;
+	width: calc(80%-20px);
+	float: left;
+	padding-left: 20px;
+}
+
+#social-box, #reporters-box, #visuals-box, #editorial-box, #mpe-box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.intern-box {
+	overflow: auto;
+	width: 220px;
+	float: left;
+	margin: 10px 1%;
+	padding: 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.intern-box:hover .name {
+	color: #1955a5;
+}
+
+.blank {
+	margin: 0 1%;
+	padding: 0 5px;
+}
+
+.section.reporters {
+	background-color: #f68b28;
+	padding: 3px 6px;
+	border-radius: 2px;
+}
+
+.section.visuals {
+	background-color: #fcc691;
+	padding: 3px 6px;
+	border-radius: 2px;
+}
+
+.section.social {
+	background-color: #fabeb4;
+	padding: 3px 6px;
+	border-radius: 2px;
+}
+
+.section.multiplatform {
+	background-color: #f69687;
+	padding: 3px 6px;
+	border-radius: 2px;
+}
+
+.section.editorial {
+	background-color: #ee645c;
+	padding: 3px 6px;
+	border-radius: 2px;
+}
+
+.name {
+	margin: 10px auto 3px auto;
+	font-size: 2em;
+	font-family: 'PostoniStandardBold';
+}
+
+.bio {
+	padding-top: 20px;
+	margin: 20px auto;
+	font-size: 16px;
+	line-height: 1.6em;
+	width: 80%;
+	max-width: 600px;
+}
+
+.bio .name {
+	line-height: 1em;
+}
+
+.bio .school {
+	margin-top: 10px;
+	line-height: 1em;
+}
+
+.bio-headshot {
+	border-radius: 50%;
+	width: 70px;
+	position: absolute;
+	margin-left: -100px;
+	margin-top: 10px;
+}
+
+.twitter {
+	margin-bottom: 10px;
+	display: block;
+	text-decoration: none;
+	color: #1955a5;
+}
+
+.twitter i {
+	margin-right: 5px;
+}
+
+.school {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.headshot {
+	float: left;
+	margin-bottom: 15px;
+/*	border-radius: 50%;
+*/}
+
+.block {
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #D5D5D5;
+	padding-left: 25px;
+}
+
+.intern-block {
+	width: 95%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#hiddeninterns {
+	background-color: #006f91;
+	color: white;
+	display: none; 
+	margin-top: -32px;
+}
+
+.second {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.active {
+	background-color: #AAAAAA;
+	font-family: "FranklinITCProBold";
+}
+
+.pg-divider {
+	width: 100%;
+	padding: 15px 0px;
+	text-align: center;
+}
+.pg-divider-line, .pg-divider-tick {
+	display: inline-block;
+	background-color: #D5D5D5;
+	vertical-align: middle;
+}
+.pg-divider-line {
+	width: 100px;
+	height: 1px;
+}
+.pg-divider-tick {
+	width: 1px;
+	height: 9px;
+	margin: 0px 3px;
+}
+
+#hiddeninterns.show {
+	display: block;
+}
+.hideMenu {
+	visibility: hidden;
+}
+
+/*#returnTop {
+	position: fixed;
+	visibility: hidden;
+	border: 2px solid #1955a5;
+	right: 30px;
+	top: 10px;
+	padding: 5px 10px;
+	background-color: #1955a5;
+}
+
+#returnTop p {
+	margin: 0;
+	color: white;
+}
+
+.hideReturn {
+	visibility: visible !important;
+}
+*/
+
+.pg-helper { cursor: pointer; cursor: hand; font-family: "FranklinITCProLight", Helvetica, Arial, sans-serif; font-size: 16px; color: #6e6e6e; }
+
+.pg-helper.pg-helper--emphasize { font-family: "FranklinITCProBold", Helvetica, Arial, sans-serif; color: #2a2a2a; }
+
+.pg-helper::before, .pg-helper::after { font-family: FontAwesome; font-size: 16px; }
+
+.pg-helper::before { margin-right: 10px; }
+
+.pg-helper::after { margin-left: 8px; }
+
+.pg-helper--instructions::before { content: "\f0a6"; }
+
+#meetInterns {
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	.intern-menu {
+		width: 30%;
+	}
+	.intern-body {
+		margin-left: 30%;
+		width: calc(70%-20px);
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.bio-headshot {
+		position: relative;
+		margin-left: 0;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.bio {
+		width: 90%;
+		padding-top: 5px;
+	}
+	#meetInterns {
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.second {
+		display: none;
+	}
+	.second.active {
+		display: block;
+	}
+	.intern-block {
+		width: 100%;
+	}
+	.intern-menu {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+	}
+	.intern-menu.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		-webkit-transform: translateZ(0);
+	}
+	.block {
+		margin: 0;
+		background-color: #006f91;
+		color: white;
+		font-size: 24px;
+	}
+	.intern-body {
+		width: 100%;
+		padding-left: 0;
+		margin-left: 0;
+	}
+	#hiddeninterns.show {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.pg-divider-line {
+		width: 80px;
+	}
+	.intern-box {
+		width: 160px;
+	}
+	.intern-box .name {
+		font-size: 1.5em;
+	}
+	.intern-box .school {
+		font-size: 1.2em;
+	}
+	.headshot {
+		width: 100%;
+	}
+}

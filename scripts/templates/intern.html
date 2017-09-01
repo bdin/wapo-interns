@@ -1,0 +1,119 @@
+<div id="reporters-box">
+	{% for item in data %}
+		{% if (item.section == "Reporters") %}
+		<div id="{{ item.last|lower }}" class="intern-box {{ item.section|lower }} {{ item.desk|lower|replace(",","")|replace(" ","-") }}">
+			{% if (item.first != "blank") %}
+			<img class="headshot" src="https://www.washingtonpost.com/wp-stat/interns-2017/images/{{ loop.index }}.jpg">
+			<span class="section {{ item.section|lower }}">{{ item.desk }}</span>
+			<div class="name">{{ item.first }} {{ item.last }}</div>
+			<div class="school">{{ item.school }}</div>
+		<!-- 	<div class="bio">{{ item.bio }}</div> -->
+			{% endif %}
+		</div>
+		{% endif %}
+	{% endfor %}
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+</div>
+
+<div id="visuals-box">
+	<div class="pg-divider">
+		<span class="pg-divider-line"></span>
+		<span class="pg-divider-tick"></span>
+		<span class="pg-divider-line"></span>
+	</div>
+	{% for item in data %}
+		{% if (item.section == "Visuals") %}
+		<div id="{{ item.last|lower }}" class="intern-box {{ item.section|lower }} {{ item.desk|lower|replace(",","")|replace(" ","-") }}">
+			{% if (item.first != "blank") %}
+			<img class="headshot" src="https://www.washingtonpost.com/wp-stat/interns-2017/images/{{ loop.index }}.jpg">
+			<span class="section {{ item.section|lower }}">{{ item.desk }}</span>
+			<div class="name">{{ item.first }} {{ item.last }}</div>
+			<div class="school">{{ item.school }}</div>
+		<!-- 	<div class="bio">{{ item.bio }}</div> -->
+			{% endif %}
+		</div>
+		{% endif %}
+	{% endfor %}
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+</div>
+
+<div id="social-box">
+	<div class="pg-divider">
+		<span class="pg-divider-line"></span>
+		<span class="pg-divider-tick"></span>
+		<span class="pg-divider-line"></span>
+	</div>
+	{% for item in data %}
+		{% if (item.section == "Social") %}
+		<div id="{{ item.last|lower }}" class="intern-box {{ item.section|lower }} {{ item.desk|lower|replace(",","")|replace(" ","-") }}">
+			{% if (item.first != "blank") %}
+			<img class="headshot" src="https://www.washingtonpost.com/wp-stat/interns-2017/images/{{ loop.index }}.jpg">
+			<span class="section {{ item.section|lower }}">{{ item.desk }}</span>
+			<div class="name">{{ item.first }} {{ item.last }}</div>
+			<div class="school">{{ item.school }}</div>
+		<!-- 	<div class="bio">{{ item.bio }}</div> -->
+			{% endif %}
+		</div>
+		{% endif %}
+	{% endfor %}
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+</div>
+
+<div id="mpe-box">
+	<div class="pg-divider">
+		<span class="pg-divider-line"></span>
+		<span class="pg-divider-tick"></span>
+		<span class="pg-divider-line"></span>
+	</div>
+	{% for item in data %}
+		{% if (item.section == "Multiplatform") %}
+		<div id="{{ item.last|lower }}" class="intern-box {{ item.section|lower }} {{ item.desk|lower|replace(",","")|replace(" ","-") }}">
+			{% if (item.first != "blank") %}
+			<img class="headshot" src="https://www.washingtonpost.com/wp-stat/interns-2017/images/{{ loop.index }}.jpg">
+			<span class="section {{ item.section|lower }}">{{ item.desk }}</span>
+			<div class="name">{{ item.first }} {{ item.last }}</div>
+			<div class="school">{{ item.school }}</div>
+		<!-- 	<div class="bio">{{ item.bio }}</div> -->
+			{% endif %}
+		</div>
+		{% endif %}
+	{% endfor %}
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+</div>
+
+<div id="editorial-box">
+	<div class="pg-divider">
+		<span class="pg-divider-line"></span>
+		<span class="pg-divider-tick"></span>
+		<span class="pg-divider-line"></span>
+	</div>
+	{% for item in data %}
+		{% if (item.section == "Editorial") %}
+		<div id="{{ item.last|lower }}" class="intern-box {{ item.section|lower }} {{ item.desk|lower|replace(",","")|replace(" ","-") }}">
+			{% if (item.first != "blank") %}
+			<img class="headshot" src="https://www.washingtonpost.com/wp-stat/interns-2017/images/{{ loop.index }}.jpg">
+			<span class="section {{ item.section|lower }}">{{ item.desk }}</span>
+			<div class="name">{{ item.first }} {{ item.last }}</div>
+			<div class="school">{{ item.school }}</div>
+		<!-- 	<div class="bio">{{ item.bio }}</div> -->
+			{% endif %}
+		</div>
+		{% endif %}
+	{% endfor %}
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+	<div class="intern-box blank"></div>
+</div>
